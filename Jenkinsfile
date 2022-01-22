@@ -43,12 +43,12 @@ spec:
 }
   }
   stages {
-    stage('Test') {
+    stage('build') {
       steps {
         container('golang') {
           sh """
             ln -s `pwd` 
-            go test
+            
           """
         }
       }
